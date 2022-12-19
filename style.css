@@ -6,10 +6,11 @@
 }
 #canvas1{
     border: 2px solid white;
+    border-radius: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 338px;
-    height: 538px;
+    width: 800px;
+    height: 533px;
 }
