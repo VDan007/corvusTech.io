@@ -7,6 +7,14 @@ myImage.addEventListener('load',()=>{
     const ctx = canvas.getContext("2d");
     canvas.width = 800;
     canvas.height = 533;
+    const gradient1 = ctx.createLinearGradient(0,0,canvas.width,canvas.height);
+    gradient1.addColorStop(0.2,'pink');
+    gradient1.addColorStop(0.3,'red');
+    gradient1.addColorStop(0.4,'orange');
+    gradient1.addColorStop(0.5,'yellow');
+    gradient1.addColorStop(0.6,'green');
+    gradient1.addColorStop(0.7,'turquoise');
+    gradient1.addColorStop(0.8,'violet');
     
     ctx.drawImage(myImage,0,0,canvas.width,canvas.height);
     const pixels = ctx.getImageData(0,0,canvas.width,canvas.height);
@@ -49,23 +57,39 @@ myImage.addEventListener('load',()=>{
             this.size = Math.random() * 1.5 +1;
             this.position1 =  Math.floor(this.y);
             this.position2 = Math.floor(this.x);
+            this.angle = 0;
         }
         update(){
             this.position1 =  Math.floor(this.y);
             this.position2 = Math.floor(this.x);
-            this.speed = mappedImage[this.position1][this.position2][0];
+            if((mappedImage[this.position1]) && (mappedImage[this.position1][this.position2])){
+                this.speed = mappedImage[this.position1][this.position2][0];
+            }
+            
             let movement = (2.5 - this.speed) + this.velocity;
+            this.angle += this.speed/20;
+            this.size = this.speed * 1.5;
 
-            this.y += movement;
+            this.y += movement + Math.sin(this.angle) * 2;
+            this.x += movement+ Math.cos(this.angle) * 2;
             if(this.y >= canvas.height){
                 this.y = 0;
                 this.x = Math.random() * canvas.width;
             }
+            if(this.x >= canvas.width){
+                this.x = 0;
+                this.y = Math.random() * canvas.height;
+            }
         }
         draw(){
             ctx.beginPath();
-            ctx.fillStyle = mappedImage[this.position1][this.position2][1];
-            ctx.arc(this.x,this.y,this.size,0,Math.PI *2);
+            if((mappedImage[this.position1]) && (mappedImage[this.position1][this.position2])){
+                ctx.fillStyle = mappedImage[this.position1][this.position2][1];
+                ctx.strokeStyle = mappedImage[this.position1][this.position2][1];
+            } 
+          //  ctx.fillStyle = gradient1;
+           // ctx.arc(this.x,this.y,this.size,0,Math.PI *2);
+           ctx.strokeRect(this.x,this.y,this.size * 3,this.size * 3);
             ctx.fill();
         }
     }
