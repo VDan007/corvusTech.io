@@ -58,7 +58,7 @@
             this.canvasHeight = canvasHeight;
             this.textX = this.canvasWidth / 2;
             this.textY = this.canvasHeight /2;
-            this.fontSize = 100;
+            this.fontSize = 80;
             this.lineHeight = this.fontSize;
             this.maxTextWidth = this.canvasWidth * 0.8;
             this.textInput = document.getElementById('textInput');
