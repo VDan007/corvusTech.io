@@ -71,9 +71,13 @@
                 x: 0,
                 y:0,
             }
-            window.addEventListener('mousemove',(e) =>{
+            hero.addEventListener('mousemove',(e) =>{
                 this.mouse.x = e.x - heroRect.left;
                 this.mouse.y = e.y - heroRect.top;
+                hero.addEventListener('mouseleave',(e)=>{
+                    this.mouse.x = 0;
+                    this.mouse.y = 0;
+                })
                 
             });
             
