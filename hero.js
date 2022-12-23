@@ -72,8 +72,8 @@
                 y:0,
             }
             window.addEventListener('mousemove',(e) =>{
-                this.mouse.x = e.x;
-                this.mouse.y = e.y;
+                this.mouse.x = e.x - heroRect.left;
+                this.mouse.y = e.y - heroRect.top;
                 
             });
             
@@ -85,8 +85,8 @@
         wrapText(text){
             const gradient = this.context.createLinearGradient(0,0,this.canvasWidth,this.canvasHeight);
             gradient.addColorStop(0.3, '#28e3da');
-            gradient.addColorStop(0.5, '#ee4266');
-            gradient.addColorStop(0.7, '#380036');
+            gradient.addColorStop(0.5, '#efea5a');
+            gradient.addColorStop(0.7, '#a4036f');
             this.context.fillStyle = gradient;
             this.context.textAlign = 'center';
             this.context.textBaseline = 'middle';
@@ -169,8 +169,8 @@
     animate();
 
     window.addEventListener('resize',function(){
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+        canvas.width = heroRect.width;
+        canvas.height = heroRect.height;
         effect.resize(canvas.width,canvas.height);
        // effect.wrapText(effect.textInput.value);
        effect.wrapText("Wellcome to CorvusTech, where the only thing we take seriously is creating seriously awesome websites.");
