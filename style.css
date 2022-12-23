@@ -9,17 +9,35 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 20px;
     
 }
 
 #logo{
-    width: 12em;
+    width: 6em;
     height: auto;
+    
 }
 
 header{
+    displaY : flex;
+   
+
+
+}
+
+nav{
+    flex: 2;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3em;
+   
+}
 
-
+nav a {
+    text-decoration: none;
+    margin-left: 3em;
+    color: white;
 }
 
