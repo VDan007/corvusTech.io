@@ -102,6 +102,7 @@ main{
 .mainTitle{
     text-align: center;
     margin-bottom: 1em;
+    
 }
 .services{
     display: flex;
@@ -130,6 +131,7 @@ main{
     color: #e8e9eb;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
+    border-radius: 20px;
 }
 .icon{
     width: 20%;
