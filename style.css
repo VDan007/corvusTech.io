@@ -2,14 +2,14 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    background: #262626;
+    
 }
 body{
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+    background: #262626;
     font-size: 20px;
     
 }
@@ -94,7 +94,13 @@ nav a:hover{
 
 /* |||||||||||||||| hero ||||||||||||||||||||||||\*/
 /* |||||||||||||||| main||||||||||||||||||||||||\*/
+main{
+    background-color: #19bfb7;
+}
 
+.mainTitle{
+    text-align: center;
+}
 .services{
     display: flex;
     justify-content: space-between;
@@ -106,8 +112,11 @@ nav a:hover{
     width: 40%;
     height: 10em;
     border: 1px solid yellow;
+   
 }
-
+.icon{
+    width: 20%;
+}
 
 /* |||||||||||||||| main ||||||||||||||||||||||||\*/
 
