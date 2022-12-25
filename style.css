@@ -157,6 +157,7 @@ main{
 .about{
     width: 100vw;
     background-color: #262626;
+    color: #19bfb7;
     padding: 2em;
     height: 20vh;
 }
