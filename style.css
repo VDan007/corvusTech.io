@@ -5,9 +5,10 @@
     
 }
 html{
-    position: relative;
+    
 }
 body{
+    position: relative;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -26,9 +27,13 @@ body{
 }
 
 header{
-    
+    position: sticky;
+    top: 10px;
     display: flex;
     padding-top: 1em;
+    margin-bottom: 2em;
+    z-index: 80;
+    
     
    
 
@@ -71,13 +76,13 @@ nav a:hover{
 .container{
     width: 80vw;
     height: 60vh;
-    margin: 0 auto;
+    margin: 0 auto  1em auto;
 }
 
 .hero{
     position: relative;
     margin-bottom: 7em;
-    height: 100vh;
+    min-height: 80vh;
     
 }
 
@@ -129,7 +134,9 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    color: #19bfb7;
     transition: background 0.5s ease-in-out;
+    
     
    
 }
@@ -145,6 +152,13 @@ main{
 .icon{
     width: 20%;
     
+}
+
+.about{
+    width: 100vw;
+    background-color: #262626;
+    padding: 2em;
+    height: 20vh;
 }
 
 /* |||||||||||||||| main ||||||||||||||||||||||||\*/
