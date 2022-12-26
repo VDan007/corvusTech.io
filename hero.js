@@ -173,11 +173,13 @@
     animate();
 
     window.addEventListener('resize',function(){
+
         canvas.width = heroRect.width;
         canvas.height = heroRect.height;
         effect.resize(canvas.width,canvas.height);
-       // effect.wrapText(effect.textInput.value);
+    
        effect.wrapText("Wellcome to CorvusTech, where the only thing we take seriously is creating seriously awesome websites.");
+       
     })
     
     
