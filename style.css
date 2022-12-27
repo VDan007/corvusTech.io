@@ -185,7 +185,7 @@ main{
     flex-direction: column;
     justify-content: space-around;
     color: #19bfb7;
-    transition: background 0.5s ease-in-out;
+    transition:  0.5s ease-in-out;
     
     
    
