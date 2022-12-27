@@ -31,7 +31,7 @@ header{
     top: 0px;
     display: flex;
     align-items: center;
-    background-color: rgba(38, 38, 38, 0.7);
+    background-color: rgba(38, 38, 38, 0.8);
   
     backdrop-filter: blur(1.7px);
     z-index: 80;
@@ -111,9 +111,24 @@ nav a:hover{
     width: 2em;
     height: 2em;
     cursor: pointer;
-    z-index: 100;
+    z-index: 79;
+    animation: bounce 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
     
 }
+
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
 .arrowSvg{
     width: 100%;
     height: 100%;
@@ -229,4 +244,5 @@ footer{
     justify-content: center;
     color: #19bfb7;
     font-size: .7em;
+    padding: 0.5em;
 }
