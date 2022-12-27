@@ -177,7 +177,7 @@
     }
     animate();
 
-   document.addEventListener('scroll',()=>{console.log(document.documentElement.scrollTop)});
+   
 
     window.addEventListener('resize',function(){
 
