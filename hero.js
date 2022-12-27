@@ -34,8 +34,13 @@
             this.effect.context.fillRect(this.x,this.y,this.size,this.size);
         }
         update(){
+            if(document.documentElement.scrollTop == 0){
             this.dx = this.effect.mouse.x - this.x;
             this.dy = this.effect.mouse.y - this.y;
+        } else{
+            this.dx = this.x;
+            this.dy = this.y;
+        }
             this.distance = this.dx * this.dx + this.dy * this.dy;
             this.force = -this.effect.mouse.radius / this.distance;
 
@@ -166,19 +171,22 @@
         ctx.clearRect(0,0,canvas.width,canvas.height);
         effect.render();
         requestAnimationFrame(animate);
-        console.log('animating');
+       
        
         
     }
     animate();
 
+   document.addEventListener('scroll',()=>{console.log(document.documentElement.scrollTop)});
+
     window.addEventListener('resize',function(){
 
-        canvas.width = heroRect.width;
-        canvas.height = heroRect.height;
-        effect.resize(canvas.width,canvas.height);
+       // canvas.width = heroRect.width;
+      //  canvas.height = heroRect.height;
+      //  effect.resize(canvas.width,canvas.height);
     
-       effect.wrapText("Wellcome to CorvusTech, where the only thing we take seriously is creating seriously awesome websites.");
+       //effect.wrapText("Wellcome to CorvusTech, where the only thing we take seriously is creating seriously awesome websites.");
+       window.location.reload();
        
     })
     

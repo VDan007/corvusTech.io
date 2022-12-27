@@ -27,12 +27,12 @@ body{
 }
 
 header{
-    position: sticky;
+    position: fixed;
     top: 0px;
     display: flex;
     align-items: center;
     background-color: rgba(38, 38, 38, 0.8);
-  
+    width: 100%;
     backdrop-filter: blur(1.7px);
     z-index: 80;
     
@@ -83,12 +83,12 @@ nav a:hover{
     width: 80vw;
     height: 80vh;
     margin: 0 auto  1em auto;
+    
 }
 
 .hero{
     position: relative;
-    margin-bottom: 7em;
-    min-height: 80vh;
+    height: 100vh;
     
     
     
@@ -178,6 +178,7 @@ main{
 .card{
     width: 40%;
     height: auto;
+    max-height: 400px;
     box-shadow: 1px 1px 3px #262626 ;
     padding: 1em;
     display: flex;
