@@ -31,8 +31,8 @@ header{
     top: 0px;
     display: flex;
     align-items: center;
-   background-color: rgba(38, 38, 38, 0.7);
-    margin-bottom: 2em;
+    background-color: rgba(38, 38, 38, 0.7);
+  
     backdrop-filter: blur(1.7px);
     z-index: 80;
     
@@ -81,7 +81,7 @@ nav a:hover{
 
 .container{
     width: 80vw;
-    height: 60vh;
+    height: 80vh;
     margin: 0 auto  1em auto;
 }
 
@@ -89,6 +89,7 @@ nav a:hover{
     position: relative;
     margin-bottom: 7em;
     min-height: 80vh;
+    
     
     
     
@@ -102,6 +103,27 @@ nav a:hover{
     z-index: 1;
    
 }
+
+.arrov{
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - 1em);
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    z-index: 100;
+    
+}
+.arrowSvg{
+    width: 100%;
+    height: 100%;
+    fill: #a4036f;
+    transform:rotate(90deg);
+    
+
+}
+
+
 
 .glass{
     position: absolute;
@@ -120,6 +142,7 @@ nav a:hover{
 /* |||||||||||||||| main||||||||||||||||||||||||\*/
 main{
     background-color: #e8e9eb;
+    
 }
 
 .mainTitle{
