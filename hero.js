@@ -93,7 +93,7 @@ function scrollFunction2(e){
             this.canvasHeight = canvasHeight;
             this.textX = this.canvasWidth / 2;
             this.textY = this.canvasHeight /2;
-            this.fontSize = measureVindowWith <= 700 ? 45: 60;
+            this.fontSize = 60;
             this.lineHeight = this.fontSize;
             this.maxTextWidth = this.canvasWidth * 0.8;
             this.textInput = document.getElementById('textInput');
@@ -194,7 +194,12 @@ function scrollFunction2(e){
     }
 
     const effect = new Effect(ctx,canvas.width,canvas.height);
-    effect.wrapText("Wellcome to CorvusTech, where the only thing we take seriously is creating seriously awesome websites." );
+    if(measureVindowWith <= 700){
+        effect.wrapText("Behold CorvusTech, architect of seriously awesome websites" );
+    }else{
+        effect.wrapText("Wellcome to CorvusTech, where the only thing we take seriously is creating seriously awesome websites." );
+    }
+    //effect.wrapText("Wellcome to CorvusTech, where the only thing we take seriously is creating seriously awesome websites." );
     effect.render();
 
     function animate(){

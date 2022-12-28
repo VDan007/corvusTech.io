@@ -278,9 +278,7 @@ footer{
     .icon{
         margin-bottom: 1em;
     }
-    .glass{
-        backdrop-filter: blur(1px);
-    }
+    
 }
 
 
