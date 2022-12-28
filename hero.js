@@ -1,4 +1,31 @@
-//window.addEventListener('load',()=>{
+const servicesStart = document.getElementById('servicesStart');
+const servicesLink = document.getElementById('servicesLink');
+const contactStart = document.getElementById('contact');
+const contactLink= document.getElementById('contactLink');
+contactLink.addEventListener('click',scrollFunction2);
+servicesLink.addEventListener('click',scrollFunction1);
+
+function scrollFunction1(e){
+    e.preventDefault();
+    servicesStart.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth',
+        inline: 'start'
+    });
+}
+function scrollFunction2(e){
+    e.preventDefault();
+    contactStart.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth',
+        inline: 'start'
+    });
+}
+
+
+
+
+
     const hero = document.querySelector(".hero");
     const heroRect = hero.getBoundingClientRect();
     const canvas = document.getElementById('canvas1');
