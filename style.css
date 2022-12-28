@@ -22,7 +22,7 @@ body{
 #logo{
     width: 6em;
     height: auto;
-    margin-left: 2em;
+    margin-left: 0;
     
     
 }
@@ -172,15 +172,18 @@ main{
 }
 .services{
     display: flex;
+    max-width: 1100px;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2em;
     margin-bottom: 2em;
     
+    
 }
 
 .card{
     width: 40%;
+    
     height: auto;
     max-height: 400px;
     box-shadow: 1px 1px 3px #262626 ;
@@ -212,9 +215,9 @@ main{
 
 .about{
     
-    max-width: 1100px;
+    max-width: 60vh;
     color: #19bfb7;
-    padding: 10em;
+    
     height: 20vh;
     display: flex;
     flex-direction: column;
@@ -280,16 +283,14 @@ footer{
     }
     #logo{
         width: 4em;
-        margin-left: 0;
+        
     }
-    #toolsLink{
-        display: none;
-    }
+    
     nav{
-        padding-right: 1em;
+        
     }
     nav a {
-        margin-left: 1em;
+        margin-left: 0.6em;
     }
 }
 
