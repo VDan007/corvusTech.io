@@ -278,7 +278,19 @@ footer{
     .icon{
         margin-bottom: 1em;
     }
-    
+    #logo{
+        width: 4em;
+        margin-left: 0;
+    }
+    #toolsLink{
+        display: none;
+    }
+    nav{
+        padding-right: 1em;
+    }
+    nav a {
+        margin-left: 1em;
+    }
 }
 
 
