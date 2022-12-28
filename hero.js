@@ -1,7 +1,11 @@
+
+//////////////////////////scroll functions/////////////////////////////
 const servicesStart = document.getElementById('servicesStart');
 const servicesLink = document.getElementById('servicesLink');
 const contactStart = document.getElementById('contact');
 const contactLink= document.getElementById('contactLink');
+const arrow = document.getElementById('arrow');
+arrow.addEventListener('click',scrollFunction1);
 contactLink.addEventListener('click',scrollFunction2);
 servicesLink.addEventListener('click',scrollFunction1);
 
@@ -22,8 +26,7 @@ function scrollFunction2(e){
     });
 }
 
-
-
+//////////////////////////scroll functions/////////////////////////////
 
 
     const hero = document.querySelector(".hero");
