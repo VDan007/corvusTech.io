@@ -53,7 +53,7 @@ function scrollFunction2(e){
             this.angle = 0;
             this.distance = 0;
             this.friction = Math.random() * 0.6 + 0.15;
-            this.ease = Math.random() * 0.1 + 0.03;
+            this.ease = Math.random() * 0.1 + 0.04;
 
 
 
