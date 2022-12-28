@@ -101,6 +101,7 @@ nav a:hover{
     width: 100%;
     height: 100%;
     z-index: 1;
+    min-width: 560px;
    
 }
 
@@ -172,6 +173,7 @@ main{
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2em;
+    margin-bottom: 2em;
     
 }
 
@@ -201,6 +203,7 @@ main{
 }
 .icon{
     width: 20%;
+    
     
     
 }
@@ -247,3 +250,32 @@ footer{
     font-size: .7em;
     padding: 0.5em;
 }
+
+
+
+/*//////////////////Media Queries///////////////////////////*/
+
+
+@media(max-width:576px){
+    .services{
+        
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+    .card{
+        width: 100%;
+        
+    }
+    .about{
+        padding: 1em;
+    }
+    .icon{
+        margin-bottom: 1em;
+    }
+}
+
+
+
+
+/*//////////////////Media Queries///////////////////////////*/
