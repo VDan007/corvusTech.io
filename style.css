@@ -264,6 +264,7 @@ footer{
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
+        margin-bottom: 7em;
     }
     .card{
         width: 100%;
@@ -271,6 +272,7 @@ footer{
     }
     .about{
         padding: 1em;
+        margin-bottom: 9em;
     }
     .icon{
         margin-bottom: 1em;
