@@ -52,14 +52,14 @@ nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 3em;
+    padding-right: 1em; 
     
    
 }
 
 nav a {
     text-decoration: none;
-    margin-left: 3em;
+    margin-left: 3em; 
     font-weight: bold;
     color: #19bfb7;
     transition-duration: 0.3s;
