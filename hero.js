@@ -131,7 +131,7 @@ function scrollFunction2(e){
             this.context.textBaseline = 'middle';
             this.context.lineWidth = 3;
             //this.context.strokeStyle = 'white';
-            this.context.font = this.fontSize + 'px Helvetica';
+            this.context.font = this.fontSize + 'px Space Grotesk';
             
             //break multiline text
             let lineArray = [];
