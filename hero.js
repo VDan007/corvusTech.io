@@ -93,7 +93,7 @@ function scrollFunction2(e){
             this.canvasHeight = canvasHeight;
             this.textX = this.canvasWidth / 2;
             this.textY = this.canvasHeight /2;
-            this.fontSize = measureVindowWith <= 700 ? 48: 60;
+            this.fontSize = measureVindowWith <= 700 ? 45: 60;
             this.lineHeight = this.fontSize;
             this.maxTextWidth = this.canvasWidth * 0.8;
             this.textInput = document.getElementById('textInput');
