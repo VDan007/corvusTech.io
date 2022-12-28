@@ -304,22 +304,19 @@ footer{
         margin-left: 0.6em;
     }
 }
-/*
-@media (orientation: landscape) {
-    .hero{
-        height: calc(100vh * 1.2);
-    }
+
+@media (orientation: landscape) and (max-height : 880px) {
     .services{
-        margin-bottom: 10em;
+        margin-bottom: 9em;
     }
     .about{
-        margin-bottom: 13em;
+        margin-bottom: 5em;
     }
     .contact{
-        height: auto;
+        height: 15vh;
     }
 }
-*/
+
 
 
 
