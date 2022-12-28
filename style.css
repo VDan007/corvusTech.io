@@ -108,7 +108,7 @@ nav a:hover{
 
 .arrov{
     position: absolute;
-    bottom: 0px;
+    bottom: 3em;
     left: calc(50% - 1em);
     width: 2em;
     height: 2em;
@@ -278,7 +278,7 @@ footer{
         margin-bottom: 1em;
     }
     .glass{
-        backdrop-filter: blur(1.5px);
+        backdrop-filter: blur(1px);
     }
 }
 
