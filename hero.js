@@ -28,7 +28,7 @@ function scrollFunction2(e){
 
 //////////////////////////scroll functions/////////////////////////////
 
-
+    const measureVindowWith = window.innerWidth;
     const hero = document.querySelector(".hero");
     const heroRect = hero.getBoundingClientRect();
     const canvas = document.getElementById('canvas1');
@@ -93,14 +93,14 @@ function scrollFunction2(e){
             this.canvasHeight = canvasHeight;
             this.textX = this.canvasWidth / 2;
             this.textY = this.canvasHeight /2;
-            this.fontSize = 80;
+            this.fontSize = measureVindowWith <= 700 ? 48: 60;
             this.lineHeight = this.fontSize;
             this.maxTextWidth = this.canvasWidth * 0.8;
             this.textInput = document.getElementById('textInput');
            
             //particle text
             this.particles = [];
-            this.gap = 3;
+            this.gap = 2;
             this.mouse = {
                 radius: 20000,
                 x: 0,
