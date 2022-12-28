@@ -74,6 +74,10 @@ nav a:hover{
     transition-timing-function: ease-in-out;
     
 }
+
+#toolsLink{
+    font-size: 0.7em;
+}
 /* |||||||||||||||| header ||||||||||||||||||||||||\*/
 
 
@@ -278,6 +282,7 @@ footer{
     .about{
         padding: 1em;
         margin-bottom: 9em;
+        width: 90vw;
     }
     .icon{
         margin-bottom: 1em;
@@ -285,6 +290,9 @@ footer{
     #logo{
         width: 4em;
         
+    }
+    .mainTitle{
+        padding: 0.3em;
     }
     
     nav{
