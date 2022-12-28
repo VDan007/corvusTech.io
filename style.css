@@ -164,6 +164,7 @@ nav a:hover{
 /* |||||||||||||||| main||||||||||||||||||||||||\*/
 main{
     background-color: #e8e9eb;
+    padding-top:1.9em;
     
 }
 
@@ -180,6 +181,7 @@ main{
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 2em;
+    padding-top: 2em;
     margin-bottom: 2em;
     
     

@@ -1,6 +1,6 @@
 
 //////////////////////////scroll functions/////////////////////////////
-const servicesStart = document.getElementById('servicesStart');
+const servicesStart = document.getElementById('main');
 const servicesLink = document.getElementById('servicesLink');
 const contactStart = document.getElementById('contact');
 const contactLink= document.getElementById('contactLink');
