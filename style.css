@@ -6,12 +6,15 @@
     
 }
 
+html{
+    height: -webkit-fill-available;
+}
+
 body{
     font-family: 'Space Grotesk', sans-serif;
     height: auto;
     max-width:100vw;
     min-width: 320px;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
