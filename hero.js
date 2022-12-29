@@ -221,7 +221,7 @@ function scrollFunction2(e){
       //  effect.resize(canvas.width,canvas.height);
     
        //effect.wrapText("Wellcome to CorvusTech, where the only thing we take seriously is creating seriously awesome websites.");
-       window.location.reload();
+      // window.location.reload();
        
     })
     
