@@ -131,7 +131,7 @@ function scrollFunction2(e){
             this.context.textBaseline = 'middle';
             this.context.lineWidth = 3;
             //this.context.strokeStyle = 'white';
-            this.context.font = this.fontSize + 'px Space Grotesk';
+            this.context.font = this.fontSize + 'px Helvetica';
             
             //break multiline text
             let lineArray = [];
@@ -195,7 +195,7 @@ function scrollFunction2(e){
 
     const effect = new Effect(ctx,canvas.width,canvas.height);
     if(measureVindowWith <= 700){
-        effect.wrapText("Behold CorvusTech, architect of seriously awesome websites" );
+        effect.wrapText("Behold CorvusTech architect of seriously awesome websites" );
     }else{
         effect.wrapText("Wellcome to CorvusTech, where the only thing we take seriously is creating seriously awesome websites." );
     }
