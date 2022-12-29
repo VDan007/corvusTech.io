@@ -30,7 +30,7 @@ function scrollFunction2(e){
 
     const measureVindowWith = window.innerWidth;
     const hero = document.querySelector(".hero");
-    const heroRect = hero.getBoundingClientRect();
+    let heroRect = hero.getBoundingClientRect();
     const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
     canvas.width = heroRect.width;
@@ -193,7 +193,7 @@ function scrollFunction2(e){
         }
     }
 
-    const effect = new Effect(ctx,canvas.width,canvas.height);
+    let effect = new Effect(ctx,canvas.width,canvas.height);
     if(measureVindowWith <= 700){
         effect.wrapText("Behold CorvusTech architect of seriously awesome websites" );
     }else{
@@ -215,13 +215,20 @@ function scrollFunction2(e){
    
 
     window.addEventListener('resize',function(){
-
-       // canvas.width = heroRect.width;
-      //  canvas.height = heroRect.height;
-      //  effect.resize(canvas.width,canvas.height);
-    
-       //effect.wrapText("Wellcome to CorvusTech, where the only thing we take seriously is creating seriously awesome websites.");
+        heroRect = hero.getBoundingClientRect();
+        canvas.width = heroRect.width;
+        canvas.height = heroRect.height;
+        effect = new Effect(ctx,canvas.width,canvas.height);
+       // effect.resize(canvas.width,canvas.height);
+       if(window.innerWidth <= 700){
+        effect.wrapText("Behold CorvusTech architect of seriously awesome websites" );
+        }else{
+        effect.wrapText("Wellcome to CorvusTech, where the only thing we take seriously is creating seriously awesome websites." );
+        }
+        
+       // effect.wrapText("Wellcome to CorvusTech, where the only thing we take seriously is creating seriously awesome websites.");
       // window.location.reload();
+        
        
     })
     
