@@ -212,25 +212,55 @@ function scrollFunction2(e){
     }
     animate();
 
-   
+    function isMobileDevice() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      }
+      
+      if (isMobileDevice()) {
+        // Do something for mobile devices
+      } else {
+        
+        window.addEventListener('resize',function(){
+        
+            heroRect = hero.getBoundingClientRect();
+            canvas.width = heroRect.width;
+            canvas.height = heroRect.height;
+            effect = new Effect(ctx,canvas.width,canvas.height);
+           // effect.resize(canvas.width,canvas.height);
+           if(window.innerWidth <= 700){
+            effect.wrapText("Behold CorvusTech architect of seriously awesome websites" );
+            }else{
+            effect.wrapText("Wellcome to CorvusTech, where the only thing we take seriously is creating seriously awesome websites." );
+            }
+            
+           // effect.wrapText("Wellcome to CorvusTech, where the only thing we take seriously is creating seriously awesome websites.");
+          // window.location.reload();
+         
+           
+        })
 
-    window.addEventListener('resize',function(){
-        heroRect = hero.getBoundingClientRect();
-        canvas.width = heroRect.width;
-        canvas.height = heroRect.height;
-        effect = new Effect(ctx,canvas.width,canvas.height);
+
+
+      }
+
+  //  window.addEventListener('resize',function(){
+  //      
+   //     heroRect = hero.getBoundingClientRect();
+  //      canvas.width = heroRect.width;
+  //      canvas.height = heroRect.height;
+  //      effect = new Effect(ctx,canvas.width,canvas.height);
        // effect.resize(canvas.width,canvas.height);
-       if(window.innerWidth <= 700){
-        effect.wrapText("Behold CorvusTech architect of seriously awesome websites" );
-        }else{
-        effect.wrapText("Wellcome to CorvusTech, where the only thing we take seriously is creating seriously awesome websites." );
-        }
+  //     if(window.innerWidth <= 700){
+  //      effect.wrapText("Behold CorvusTech architect of seriously awesome websites" );
+  //      }else{
+  //      effect.wrapText("Wellcome to CorvusTech, where the only thing we take seriously is creating seriously awesome websites." );
+  //      }
         
        // effect.wrapText("Wellcome to CorvusTech, where the only thing we take seriously is creating seriously awesome websites.");
       // window.location.reload();
-        
+     
        
-    })
+  //  })
     
     
 
