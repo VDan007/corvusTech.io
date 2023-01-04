@@ -26,6 +26,10 @@ function scrollFunction2(e){
     });
 }
 
+window.addEventListener('load',function(){
+    window.history.pushState({},"","corvustech.io");
+})
+
 //////////////////////////scroll functions/////////////////////////////
 
     const measureVindowWith = window.innerWidth;
