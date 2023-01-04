@@ -28,7 +28,7 @@ function scrollFunction2(e){
 
 window.addEventListener('load',function(){
     console.log('works');
-    window.history.replaceState({},"","");
+    window.history.pushState({},"","/");
 })
 
 //////////////////////////scroll functions/////////////////////////////
