@@ -27,7 +27,8 @@ function scrollFunction2(e){
 }
 
 window.addEventListener('load',function(){
-    window.history.replaceState({},"","");
+    console.log('works');
+    window.history.replaceState({},"","/index.html");
 })
 
 //////////////////////////scroll functions/////////////////////////////
