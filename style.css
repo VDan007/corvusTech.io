@@ -359,6 +359,7 @@ footer{
     justify-content: center;
     width: 20%;
     height: 20%;
+    min-width: 250px;
     box-shadow: 1px 1px 3px #262626 ;
     padding: 1em;
     color: #19bfb7;
