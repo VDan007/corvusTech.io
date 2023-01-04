@@ -41,6 +41,7 @@ header{
     background-color: rgba(38, 38, 38, 0.8);
     width: 100%;
     backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px);
     z-index: 80;
     
     
@@ -161,6 +162,7 @@ nav a:hover{
     height: 100%;
     background-color:rgba(10,10,10,.03);
     backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     z-index: 50;
    
 }
@@ -311,6 +313,7 @@ footer{
     
     .glass{
         backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
     }
     
     nav a {
