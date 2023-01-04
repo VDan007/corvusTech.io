@@ -337,3 +337,41 @@ footer{
 
 
 /*//////////////////Media Queries///////////////////////////*/
+
+
+
+
+/*/////////////////////// freeToolsCOntainer///////////////////*/
+
+.freeToolsContainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e9eb;
+}
+
+.toolCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 20%;
+    box-shadow: 1px 1px 3px #262626 ;
+    padding: 1em;
+    color: #19bfb7;
+    transition:  0.5s ease-in-out;
+}
+
+
+.toolCard:hover{
+    background-color: #a4036f;
+    transform: scale(1.1);
+    color: #e8e9eb;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    border-radius: 20px;
+}
+/*/////////////////////// freeToolsCOntainer///////////////////*/
