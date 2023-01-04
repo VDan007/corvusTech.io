@@ -27,7 +27,7 @@ function scrollFunction2(e){
 }
 
 window.addEventListener('load',function(){
-    window.history.pushState({},"","corvustech.io");
+    window.history.replaceState({},"","");
 })
 
 //////////////////////////scroll functions/////////////////////////////
