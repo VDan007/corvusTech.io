@@ -8,6 +8,7 @@ const arrow = document.getElementById('arrow');
 arrow.addEventListener('click',scrollFunction1);
 contactLink.addEventListener('click',scrollFunction2);
 servicesLink.addEventListener('click',scrollFunction1);
+let vh = window.innerHeight * 0.01;
 
 function scrollFunction1(e){
     e.preventDefault();
@@ -35,6 +36,7 @@ window.addEventListener('load',function(){
 
     const measureVindowWith = window.innerWidth;
     const hero = document.querySelector(".hero");
+    hero.style.setProperty('--vh',`${vh}px`);
     let heroRect = hero.getBoundingClientRect();
     const canvas = document.getElementById('canvas1');
     const ctx = canvas.getContext('2d');
