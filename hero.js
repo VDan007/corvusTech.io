@@ -245,6 +245,9 @@ window.addEventListener('load',function(){
       } else {
         
         window.addEventListener('resize',function(){
+
+            vh = window.innerHeight * 0.01;
+            hero.style.setProperty('--vh',`${vh}px`);
         
             heroRect = hero.getBoundingClientRect();
             canvas.width = heroRect.width;
