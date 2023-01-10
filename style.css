@@ -223,6 +223,8 @@ main{
 }
 .icon{
     width: 20%;
+    height: auto;
+    margin-bottom: 0.4em;
     
     
     
